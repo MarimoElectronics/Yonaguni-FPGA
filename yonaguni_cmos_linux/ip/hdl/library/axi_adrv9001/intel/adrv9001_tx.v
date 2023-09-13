@@ -159,6 +159,7 @@ module adrv9001_tx #(
     assign tx_strobe_out_p_strobe_out = gpio_out[2];
     assign tx_qdata_out_p_qdata3      = gpio_out[1];
     assign tx_idata_out_p_idata1      = gpio_out[0];
+    assign dac_clk_ratio = 4;
   end
   // CMOS
   else begin
@@ -213,12 +214,11 @@ module adrv9001_tx #(
     assign tx_qdata_out_n_qdata2      = gpio_out[2];
     assign tx_idata_out_p_idata1      = gpio_out[1];
     assign tx_idata_out_n_idata0      = gpio_out[0];
+    assign dac_clk_ratio = 1;
   end
   endgenerate
 
   // No clock divider, qualifier used instead
   assign dac_clk_div = tx_clk;
-
-  assign dac_clk_ratio = 1;
 
 endmodule

@@ -108,17 +108,17 @@ module adrv9001_rx #(
     // ALTPLL
     altera_pll #(
       .fractional_vco_multiplier("false"),
-      .reference_clock_frequency("491.52 MHz"),
+      .reference_clock_frequency("157.2864 MHz"),
       .operation_mode("lvds"),
       .number_of_clocks(3),
-      .output_clock_frequency0("491.520000 MHz"),
-      .phase_shift0("1017 ps"),
+      .output_clock_frequency0("314.572800 MHz"),
+      .phase_shift0("1589 ps"),
       .duty_cycle0(50),
-      .output_clock_frequency1("61.440000 MHz"),
-      .phase_shift1("12207 ps"),
-      .duty_cycle1(12),
-      .output_clock_frequency2("61.440000 MHz"),
-      .phase_shift2("15259 ps"),
+      .output_clock_frequency1("39.321600 MHz"),
+      .phase_shift1("19073 ps"),
+      .duty_cycle1(13),
+      .output_clock_frequency2("39.321600 MHz"),
+      .phase_shift2("23842 ps"),
       .duty_cycle2(50),
       .output_clock_frequency3("0 MHz"),
       .phase_shift3("0 ps"),
@@ -295,6 +295,7 @@ module adrv9001_rx #(
     assign gpio_in[2] = rx_strobe_in_p_strobe_in;
     assign gpio_in[1] = rx_qdata_in_p_qdata3;
     assign gpio_in[0] = rx_idata_in_p_idata1;
+    assign adc_clk_ratio = 4;
   end
   // CMOS
   else begin
@@ -345,6 +346,7 @@ module adrv9001_rx #(
     assign gpio_in[1] = rx_idata_in_p_idata1;
     assign gpio_in[0] = rx_idata_in_n_idata0;
     assign delay_locked = 'b0;
+    assign adc_clk_ratio = 1;
   end
   endgenerate
 
@@ -352,7 +354,5 @@ module adrv9001_rx #(
   assign up_adc_drdata = 'b0;
   assign ssi_sync_out = 'b0;
   assign ssi_rst = 'b0;
-
-  assign adc_clk_ratio = 1;
 
 endmodule

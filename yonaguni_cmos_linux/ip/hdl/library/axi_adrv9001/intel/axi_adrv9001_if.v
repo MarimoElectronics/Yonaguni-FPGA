@@ -391,7 +391,8 @@ module axi_adrv9001_if #(
 
   adrv9001_tx_link #(
     .CMOS_LVDS_N (CMOS_LVDS_N),
-    .CLK_DIV_IS_FAST_CLK (FPGA_TECHNOLOGY >= 100)
+  //.CLK_DIV_IS_FAST_CLK (FPGA_TECHNOLOGY >= 100)
+    .CLK_DIV_IS_FAST_CLK (CMOS_LVDS_N) // Switch CMOS or LVDS mode
   ) i_tx_1_link (
     .dac_clk_div (dac_1_clk_div),
     .dac_data_0 (dac_1_data_0),
@@ -456,7 +457,8 @@ module axi_adrv9001_if #(
 
     adrv9001_tx_link #(
       .CMOS_LVDS_N (CMOS_LVDS_N),
-      .CLK_DIV_IS_FAST_CLK (FPGA_TECHNOLOGY >= 100)
+    //.CLK_DIV_IS_FAST_CLK (FPGA_TECHNOLOGY >= 100)
+      .CLK_DIV_IS_FAST_CLK (CMOS_LVDS_N) // Switch CMOS or LVDS mode
     ) i_tx_2_link (
       .dac_clk_div (dac_2_clk_div),
       .dac_data_0 (dac_2_data_0),
