@@ -35,8 +35,11 @@
   The following files have been modified:
   
   /ip/hdl/library/axi_adrv9001/intel/adrv9001_rx.v
+  
   /ip/hdl/library/axi_adrv9001/intel/adrv9001_tx.v
+  
   /ip/hdl/library/axi_adrv9001/intel/axi_adrv9001_if.v **
+  
   /ip/hdl/library/axi_adrv9001/axi_adrv9001_hw.tcl
 
 \** The original axi_adrv9001_if.v is located in /ip/hdl/library/axi_adrv9001
