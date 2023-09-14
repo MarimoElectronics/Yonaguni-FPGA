@@ -14,7 +14,7 @@
   
   /ip/hdl/library/axi_adrv9001/axi_adrv9001_hw.tcl
 
-\* The original axi_adrv9001_if.v is located in /ip/hdl/library/axi_adrv9001
+\* The original axi_adrv9001_if.v is located in /hdl/library/axi_adrv9001
 
 ## **FPGA Project implementation**
   - Use Quartus Prime Lite Edition 20.1.

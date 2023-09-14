@@ -15,7 +15,7 @@
 
 
 ## **FPGA Overview**
-  Yonaguni integrates an Intel Cyclone® V SE SoC FPGA (5CSEBA6U23C7N) for baseband processor.
+  ADRV9002 RF-SoM integrates an Intel Cyclone® V SE SoC FPGA (5CSEBA6U23C7N) for baseband processor.
   This repository provides users with FPGA projects that implement partially customized Analog Devices HDL reference designs on this baseband processor.
   The projects provided differ depending on the ADRV9002 interface.
 
