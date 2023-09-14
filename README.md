@@ -33,12 +33,10 @@
   This HDL reference design does not support Intel Cyclone V SoC in ADRV9002 projects.
   For this reason, we are customizing it for the Cyclone V SoC using the Intel Arria 10 SoC HDL code prepared in the ADRV9002 project.
   The following files have been modified:
+  
   /ip/hdl/library/axi_adrv9001/intel/adrv9001_rx.v
-  
   /ip/hdl/library/axi_adrv9001/intel/adrv9001_tx.v
-  
   /ip/hdl/library/axi_adrv9001/intel/axi_adrv9001_if.v **
-  
   /ip/hdl/library/axi_adrv9001/axi_adrv9001_hw.tcl
 
 \** The original axi_adrv9001_if.v is located in /ip/hdl/library/axi_adrv9001
