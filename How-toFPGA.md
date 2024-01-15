@@ -17,9 +17,11 @@
 \* The original axi_adrv9001_if.v is located in /hdl/library/axi_adrv9001
 
 ## **FPGA Project implementation**
-  - Use Quartus Prime Lite Edition 20.1.
-  - Launch Quartus and select the project file yonaguni_cmos.qpf.
-  - On Quartus, launch Platform Designer and select system_bd.qsys.
+  - Use Quartus Prime Lite Edition 20.1.1
+  - if your project is CMOS use "yonaguni_cmos_linux_" else use "yonaguni_lvds_linux".
+  - Launch Quartus and select "yonaguni_cmos.qpf" or "yonaguni_lvds.qpf".
+  - On Quartus, launch Platform Designer and select "system_bd.qsys".
   - In Platform Designer, run Generate > Generate HDL...
   - Run Start Compilation on Quartus.
-  - Write "yonaguni_cmos.rbf", which is created in the /output_files folder, to the BOOT partition of the SD card.
+  - For CMOS projects, write "yonaguni_cmos.rbf" created in the /output_files folder to the BOOT partition of the SD card.
+  - For LVDS projects, rename "yonaguni_lvds.rbf" created in the /output_files folder to "yonaguni_cmos.rbf", and write the "yonaguni_cmos.rbf" to the BOOT partition of the SD card.

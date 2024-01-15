@@ -1,6 +1,6 @@
 # ADRV9002 RF-SoM FPGA Project
 
-- [**ADRV9002 RF-SoM FPGA Project**](#adrv9002-rf-som-fpga-project)
+- [ADRV9002 RF-SoM FPGA Project](#adrv9002-rf-som-fpga-project)
   - [**Project Descriptions**](#project-descriptions)
   - [**FPGA Overview**](#fpga-overview)
   - [**License**](#license)
@@ -22,9 +22,7 @@
 | Interface | Project |
 ----|----
 | CSSI | Yonaguni_cmos_linux |
-| LSSI | Yonaguni_lvds_linux * |
-
-\* Coming soon
+| LSSI | Yonaguni_lvds_linux |
 
 
 ## **License**
