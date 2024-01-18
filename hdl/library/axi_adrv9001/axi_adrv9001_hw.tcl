@@ -61,6 +61,7 @@ ad_ip_files axi_adrv9001 [list\
 ad_ip_parameter ID INTEGER 0
 ad_ip_parameter CMOS_LVDS_N INTEGER 0
 ad_ip_parameter IO_DELAY_GROUP STRING {dev_if_delay_group}
+ad_ip_parameter DDS_DISABLE INTEGER 0
 
 adi_add_auto_fpga_spec_params
 
@@ -259,23 +260,27 @@ proc axi_adrv9001_elab {} {
     add_interface_port device_if rx1_idata_in_p_idata1     rx1_idata_in_p_idata1     Input 1
     add_interface_port device_if rx1_qdata_in_p_qdata3     rx1_qdata_in_p_qdata3     Input 1
     add_interface_port device_if rx1_strobe_in_p_strobe_in rx1_strobe_in_p_strobe_in Input 1
+    add_interface_port device_if rx1_enable                rx1_enable                Output 1
 
     add_interface_port device_if rx2_dclk_in_p_dclk_in     rx2_dclk_in_p_dclk_in     Input 1
     add_interface_port device_if rx2_idata_in_p_idata1     rx2_idata_in_p_idata1     Input 1
     add_interface_port device_if rx2_qdata_in_p_qdata3     rx2_qdata_in_p_qdata3     Input 1
     add_interface_port device_if rx2_strobe_in_p_strobe_in rx2_strobe_in_p_strobe_in Input 1
+    add_interface_port device_if rx2_enable                rx2_enable                Output 1
 
     add_interface_port device_if tx1_dclk_out_p_dclk_out     tx1_dclk_out_p_dclk_out     Output 1
     add_interface_port device_if tx1_dclk_in_p_dclk_in       tx1_dclk_in_p_dclk_in       Input 1
     add_interface_port device_if tx1_idata_out_p_idata1      tx1_idata_out_p_idata1      Output 1
     add_interface_port device_if tx1_qdata_out_p_qdata3      tx1_qdata_out_p_qdata3      Output 1
     add_interface_port device_if tx1_strobe_out_p_strobe_out tx1_strobe_out_p_strobe_out Output 1
+    add_interface_port device_if tx1_enable                  tx1_enable                  Output 1
 
     add_interface_port device_if tx2_dclk_out_p_dclk_out     tx2_dclk_out_p_dclk_out     Output 1
     add_interface_port device_if tx2_dclk_in_p_dclk_in       tx2_dclk_in_p_dclk_in       Input 1
     add_interface_port device_if tx2_idata_out_p_idata1      tx2_idata_out_p_idata1      Output 1
     add_interface_port device_if tx2_qdata_out_p_qdata3      tx2_qdata_out_p_qdata3      Output 1
     add_interface_port device_if tx2_strobe_out_p_strobe_out tx2_strobe_out_p_strobe_out Output 1
+    add_interface_port device_if tx2_enable                  tx2_enable                  Output 1
   }
 }
 
