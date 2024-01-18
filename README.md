@@ -22,9 +22,7 @@
 | Interface | Project |
 ----|----
 | CSSI | Yonaguni_cmos_linux |
-| LSSI | Yonaguni_lvds_linux * |
-
-\* Coming soon
+| LSSI | Yonaguni_lvds_linux |
 
 
 ## **License**
