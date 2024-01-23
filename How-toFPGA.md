@@ -37,3 +37,5 @@
   - In Platform Designer, run "Generate > Generate HDL...".
   - Run "Start Compilation" on Quartus.
   - Write "yonaguni_cmos.rbf", which is created in the "output_files" folder, to the BOOT partition of the SD card.
+    
+    if an LVDS project, "yonaguni_lvds.rbf" will be created, so change the file name to "yonaguni_cmos.rbf".
