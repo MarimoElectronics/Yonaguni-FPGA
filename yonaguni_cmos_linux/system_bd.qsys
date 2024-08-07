@@ -727,6 +727,7 @@
  </module>
  <module name="axi_adrv9001" kind="axi_adrv9001" version="1.0" enabled="1">
   <parameter name="CMOS_LVDS_N" value="1" />
+  <parameter name="DDS_DISABLE" value="0" />
   <parameter name="DEVICE" value="5CSEBA6U23C7" />
   <parameter name="DEV_PACKAGE_MANUAL" value="0" />
   <parameter name="FPGA_FAMILY_MANUAL" value="0" />
@@ -1350,7 +1351,7 @@
   <parameter name="TREFI" value="35100" />
   <parameter name="TRFC" value="350" />
   <parameter name="UART0_Mode" value="No Flow Control" />
-  <parameter name="UART0_PinMuxing" value="HPS I/O Set 0" />
+  <parameter name="UART0_PinMuxing" value="HPS I/O Set 1" />
   <parameter name="UART1_Mode" value="N/A" />
   <parameter name="UART1_PinMuxing" value="Unused" />
   <parameter name="USB0_Mode" value="N/A" />
