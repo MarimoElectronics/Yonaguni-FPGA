@@ -10,8 +10,8 @@
 ## **Download and Build FPGA Project**
   - Clone Yonaguni-FPGA and Analog Devices HDL reference.
   ```SHELL
-  $ git clone -b FPGA_r1.1.0 https://www.github.com/MarimoElectronics/yonaguni-FPGA
-  $ git clone -b hdl_2023_r2 https://www.github.com/analogdevicesinc/hdl
+  $ git clone -b FPGA_r1.1.1 https://www.github.com/MarimoElectronics/yonaguni-FPGA
+  $ git clone -b 2023_R2_p1 https://www.github.com/analogdevicesinc/hdl
   ```
   - Copy the Yonaguni modified files to the Analog Devices HDL reference. This will copy the make files, tcl files, HDL sources, etc. needed to build the Yonaguni HDL project. The forrowing command is an example of an LVDS project. For a CMOS project, change the "lvds" to "cmos" of the command line and  execute.
    ```SHELL
